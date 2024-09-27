@@ -13,9 +13,9 @@ ServoHT servoRotor;    // create another servo object for rotor joint
 #define IN4               3
 #define TRIGGER_PIN       23
 #define ECHO_PIN          24
-#define SERVO_LIFTER_PIN  PB7
+#define SERVO_LIFTER_PIN  PB9
 #define SERVO_GRIPPER_PIN PB8
-#define SERVO_ROTOR_PIN   PB9   
+#define SERVO_ROTOR_PIN   PB7   
 #define OPEN_ANGLE        0
 #define CLOSE_ANGLE       180
 #define UP_ANGLE          130
@@ -67,6 +67,7 @@ void setup() {
   servoRotor.attach(SERVO_ROTOR_PIN);
   servoRotor.write(HOME_ANGLE);
   Serial.begin(115200);
+  Serial1.begin(115200);
 
 }
 
@@ -85,8 +86,8 @@ void loop() {
     // delay(5);
     // servoRotate(COLOR_NULL);
   // }
-  while (Serial.available() > 0) {
-    char s = Serial.read();
+  while (Serial1.available() > 0) {
+    char s = Serial1.read();
     Serial.print(s);
 
     switch (s) {
