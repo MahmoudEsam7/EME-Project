@@ -5,12 +5,12 @@ ServoHT servoLifter;   // create servo object to control a servo
 ServoHT servoGripper;  // create another servo object for gripper
 ServoHT servoRotor;    // create another servo object for rotor joint
 // Macros Section 
-#define ENA               8
-#define ENB               7
-#define IN1               6
-#define IN2               5
-#define IN3               4
-#define IN4               3
+#define ENA               PB1
+#define ENB               PB0
+#define IN1               PA7
+#define IN2               PA6
+#define IN3               PA5
+#define IN4               PA4
 #define TRIGGER_PIN       23
 #define ECHO_PIN          24
 #define SERVO_LIFTER_PIN  PB9
