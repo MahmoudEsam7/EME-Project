@@ -30,15 +30,19 @@ void loop() {
       switch (command) {
         case 'F':
           Serial.println("F");
+          Serial.println("S");
           break;
         case 'B':
           Serial.println("B");
+          Serial.println("S");
           break;
         case 'R':
           Serial.println("R");
+          Serial.println("S");
           break;
         case 'L':
           Serial.println("L");
+          Serial.println("S");
           break;
         case 'S':
           Serial.println("S");
@@ -66,13 +70,7 @@ void loop() {
           break;
         case '0':
           Serial.println("0");
-          break;                                                           
-        case '1':
-          Serial.println("1");
-          break;          
-        case '2':
-          Serial.println("2");
-          break;          
+          break;                                                                
       }
     }
   }
