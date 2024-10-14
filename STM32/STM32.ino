@@ -11,8 +11,8 @@ ServoHT servoRotor;    // create another servo object for rotor joint
 #define IN2               PA6
 #define IN3               PA5
 #define IN4               PA4
-#define TRIGGER_PIN       23
-#define ECHO_PIN          24
+#define TRIGGER_PIN       PA3
+#define ECHO_PIN          PA2
 #define SERVO_LIFTER_PIN  PB9
 #define SERVO_GRIPPER_PIN PB8
 #define SERVO_ROTOR_PIN   PB7   
